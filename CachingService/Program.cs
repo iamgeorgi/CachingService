@@ -10,6 +10,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddTransient<SampleDataAccess>();
+builder.Services.AddMemoryCache();
 
 var app = builder.Build();
 
